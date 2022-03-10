@@ -7,10 +7,9 @@ import Footer from "./components/footer/Footer";
 export default function App() {
   return (
     <div className="App">
-      <h1>Lord of the Rings</h1>
-      {/* <Header />
+      <Header />
       <Main />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
