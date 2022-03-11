@@ -6,13 +6,9 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
     "axios": "^0.26.1",
     "cors": "^2.8.5",
-=======
-    "cors": "^2.8.5",
     "nodemon": "^2.0.15",
->>>>>>> adca769186c7df6f86617ad45380d0c917943a98
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2",
