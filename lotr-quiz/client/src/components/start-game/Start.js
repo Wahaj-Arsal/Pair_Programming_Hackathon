@@ -4,9 +4,7 @@ import React, { useState } from "react";
 import fellowship from "../../assets/fellowship.png";
 
 export default class Start extends Component {
-
-const [revealed, setReveal] = useState(false);
-
+  // const [revealed, setReveal] = useState(false);
 
   render() {
     return (
@@ -20,9 +18,14 @@ const [revealed, setReveal] = useState(false);
                 <div className="line"></div>
               </div>
             </div>
-            <button className="next-button" {revealed ? "showbutton" : "hidden-button"}>Begin Your Quote Quest</button>
-          </div>  
- </div>
+            <button
+              className="next-button"
+              // {revealed ? "showbutton" : "hidden-button"}
+            >
+              Begin Your Quote Quest
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
