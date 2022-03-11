@@ -7,25 +7,7 @@ import { Link } from "react-router-dom";
 
 const DisplayQuote = ({ quote }) => {
   // console.log(video);
-  return (
-    <div className="aside__tile">
-      <div className="aside__background">
-        {/* Use JS function to move the broken img icon to the background?? */}
-        {/* <Link to={`/video/${video.id}`} key={video.id} className="aside__link">
-          <img
-            src={video.image}
-            className="aside__img"
-            id={video.id}
-            alt={video.title}
-          />
-        </Link> */}
-      </div>
-      <div className="aside-details">
-        <h3 className="aside-details__title">{quote.dialog}</h3>
-        {/* <p className="aside-details__channel">{video.channel}</p> */}
-      </div>
-    </div>
-  );
+  return <h3>{quote.dialog}</h3>;
 };
 
 export default DisplayQuote;

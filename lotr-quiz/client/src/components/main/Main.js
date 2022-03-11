@@ -4,6 +4,8 @@ import "../global.scss";
 import "./main.scss";
 import React, { Component } from "react";
 import axios from "axios";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
 import Home from "../home/Home";
 import Quote from "../home/Home";
 // const fs = require("fs");
@@ -51,8 +53,9 @@ export default class Main extends Component {
     // console.log(this.state.character);
     return (
       <div>
-        <h1>Intro</h1>
+        <Header />
         <Home quotes={quote} />
+        <Footer />
       </div>
     );
   }

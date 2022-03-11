@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-/** @format */
-=======
 import "../global.scss";
 import "./header.scss";
 
@@ -13,4 +10,3 @@ const Header = () => {
 };
 
 export default Header;
->>>>>>> adca769186c7df6f86617ad45380d0c917943a98

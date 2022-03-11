@@ -26,3 +26,24 @@
 .start-button:hover {
   opacity: 1;
 }
+
+.start-box {
+  width: 50vw;
+  background-image: url("../../assets/parchment.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: aliceblue 2px solid;
+  font-size: 2rem;
+  font-style: italic;
+  font-style: "Ancient-Modern" !important;
+  padding: 1rem;
+}
+.showbutton {
+  color: white;
+}
+
+.hidden-button {
+  color: black;
+}

@@ -19,6 +19,16 @@
   font-size: 2rem;
 }
 
+.quiz,
+.answer,
+.right-side {
+  animation: appear-in 5s ease 1;
+}
+
+.homepage {
+  display: flex;
+}
+
 .quiz {
   display: flex;
 }
@@ -28,14 +38,12 @@
   //   width: 85%;
 }
 
-.right-side {
-  //   width: 15%;
-}
-
 .title {
   display: flex;
   color: white;
   align-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .question-box,
@@ -51,16 +59,51 @@
 
 .question-box {
   width: 50vw;
-  background-color: coral;
+  background-image: url("../../assets/parchment.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: aliceblue 2px solid;
+  font-size: 2rem;
+  font-style: italic;
+  font-style: "Ancient-Modern" !important;
+  padding: 1rem;
+}
+
+.intro-section,
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro-section {
+  color: white;
+  font-size: 1.5rem;
+  background-color: black;
+  border: 5px white solid;
+  width: 50vw;
+  align-items: center;
 }
 
 .question {
   display: flex;
   justify-content: center;
 }
-.answer__box--top {
+
+.scoreboard {
+  background-color: black;
+  border: 5px solid white;
+  justify-content: center;
   display: flex;
-  flex-direction: row;
+}
+
+.answer {
+  &__box--top {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .answer__box {
@@ -75,4 +118,129 @@
 .characters {
   display: flex;
   justify-content: center;
+}
+
+.bounce {
+  animation: bounce2 2s ease 3;
+}
+
+.RIP {
+  animation: myAnimation 5s ease 1;
+}
+
+.showAnswer {
+  color: white;
+}
+
+.hidden-name {
+  color: black;
+}
+
+//loading bar
+
+.text {
+  color: wheat;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.loading {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading,
+.line-box {
+  padding: 2px;
+  width: 40%;
+  height: 20px;
+  background-color: aqua;
+  border: 2px;
+}
+
+.loading,
+.line-box,
+.line {
+  height: 20px;
+  // border-radius: 20px;
+  background-color: aqua;
+  animation: loading 5s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+.next-button {
+  // display: none;
+  color: red;
+}
+
+.appear {
+  display: none;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.will-bounce {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+#myelement {
+  animation-name: myAnimation;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
