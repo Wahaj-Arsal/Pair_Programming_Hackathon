@@ -52,7 +52,7 @@ export default class Main extends Component {
     return (
       <div>
         <h1>Intro</h1>
-        <Quote quotes={quote} />
+        <Home quotes={quote} />
       </div>
     );
   }

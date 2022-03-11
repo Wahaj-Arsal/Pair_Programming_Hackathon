@@ -12,14 +12,19 @@ import boromir from "../../assets/boromir.png";
 import arogon from "../../assets/arogon.png";
 import saurontower from "../../assets/saurontower.png";
 import clickSound from "../../assets/clicksound.mp3";
+import DisplayQuote from "./DisplayQuote";
 
-const Home = () => {
-  //Function To Load
-
+export default function Home({ quotes }) {
   // let click = new Audio({ clickSound });
   // const start = () => {
   //   click.play();
   // };
+
+  const listQuote = quotes.map((oneQuote) => {
+    var oneQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    return <DisplayQuote quote={oneQuote} key={oneQuote.id} />;
+  });
+
   return (
     <div className="home">
       <div className="title">
@@ -41,7 +46,10 @@ const Home = () => {
             <img src={arogon} alt="arogon" className="characters__podium" />
           </div>
           <div className="question">
-            <div className="question-box">Question:</div>
+            <div className="question-box">
+              Question:
+              <h3 className="aside-details__title">{listQuote[0]} </h3>
+            </div>
           </div>{" "}
         </div>
         <div className="right-side">
@@ -67,6 +75,4 @@ const Home = () => {
       </div>
     </div>
   );
-};
-
-export default Home;
+}
