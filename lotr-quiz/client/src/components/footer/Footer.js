@@ -3,9 +3,9 @@ import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div>
+    <div class="footer">
       {" "}
-      <h1>Lord of the Rings</h1>
+      <h4>Christian Mitchell & Wahaj Arsal</h4>
     </div>
   );
 };

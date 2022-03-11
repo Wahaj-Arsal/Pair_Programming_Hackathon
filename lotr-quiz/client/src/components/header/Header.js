@@ -3,8 +3,8 @@ import "./header.scss";
 
 const Header = () => {
   return (
-    <div className="main">
-      <h1>Lord of the Rings</h1>
+    <div className="header">
+      <h4>Wahaj Arsal & Christian Mitchell</h4>
     </div>
   );
 };

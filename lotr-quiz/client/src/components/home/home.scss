@@ -1,0 +1,78 @@
+.home {
+  background-image: url("../../assets/bgme.jpg");
+  min-width: 100vw;
+  min-height: 100vh;
+  //   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  //   background-image: url("../../assets/gamebg.jpg");
+  //   // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  //   /* Set a specific height */
+  //   height: 100%;
+  //   color: red;
+  //   /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.quiz {
+  display: flex;
+}
+
+.left-side {
+  justify-content: left;
+  //   width: 85%;
+}
+
+.right-side {
+  //   width: 15%;
+}
+
+.title {
+  display: flex;
+  color: white;
+  align-content: center;
+}
+
+.question-box,
+.answer__box {
+  background-color: antiquewhite;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 20vh;
+}
+
+.question-box {
+  width: 50vw;
+  background-color: coral;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+}
+.answer__box--top {
+  display: flex;
+  flex-direction: row;
+}
+
+.answer__box {
+  font-size: 3rem;
+  opacity: 0.8;
+}
+.answer__box:hover {
+  opacity: 1;
+}
+
+///Images
+.characters {
+  display: flex;
+  justify-content: center;
+}
