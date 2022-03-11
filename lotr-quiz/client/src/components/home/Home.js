@@ -50,7 +50,7 @@ export default function Home({ quotes }) {
         <p>How Do We Stop Him? </p>{" "}
         <p>By Calling the Fellowship of the Ring, of Course!</p>
         <p>
-          To Do So, You Must Correctly Match a Quote of each Fellowship Memember
+          To Do So, You Must Correctly Match a Quote of each Fellowship Member
           to call them to arms.{" "}
         </p>
         <p>Once You Have All 9 Together, Sauron Will be Defeated.</p>
